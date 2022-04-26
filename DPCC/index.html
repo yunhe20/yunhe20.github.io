@@ -1,0 +1,241 @@
+
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>DPCC</title>
+    <meta property="og:title" content="Density-preserving Deep Point Cloud Compression">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">Density-preserving Deep Point Cloud Compression</span>
+    </div>
+
+    <br>
+    <table align="center" width="1000px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yun He*</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xinlin Ren*</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Danhang Tang</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yinda Zhang</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xiangyang Xue</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yanwei Fu</a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px">Fudan University &nbsp; &nbsp; Google</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <table align="center" width="1100px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/teaser.png" width="1100px"></a><br>
+                    </div>
+                    <div class="center-div">
+                            <span style="font-size:14px"><i>We argue that local density is an important characteristic of the point cloud and should be preserved during compression.</i></span>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p style="text-align:justify">
+        Local density of point clouds is crucial for representing local details, but has been overlooked by existing point cloud compression methods.
+        To address this, we propose a novel deep point cloud compression method that preserves local density information.
+        Our method works in an auto-encoder fashion: the encoder downsamples the points and learns point-wise features, while the decoder upsamples the points using these features.
+        Specifically, we propose to encode local geometry and density with three embeddings: density embedding, local position embedding and ancestor embedding.
+        During the decoding, we explicitly predict the upsampling factor for each point, and the directions and scales of the upsampled points.
+        To mitigate the clustered points issue in existing methods, we design a novel sub-point convolution layer, and an upsampling block with adaptive scale.
+        Furthermore, our method can also compress point-wise attributes, such as normal.
+        Extensive qualitative and quantitative results on SemanticKITTI and ShapeNet demonstrate that our method achieves the state-of-the-art rate-distortion trade-off.
+    </p>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Pipeline</h1>
+    </div>
+    <br>
+    <table align="center" width="1000px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/pipeline.png" width="1000px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>Our pipeline first partitions the point cloud into small blocks. Each block is then downsampled three times while the local density and geometry patterns of collapsed points are encoded into features. 
+                            At the bottleneck, downsampled features are further compressed by an entropy encoder. 
+                            The decoder can then use the features to adaptively upsample the downsampled point cloud back to the original geometry and density.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper and Code</h1>
+    </div>
+    <table align="center" width="800px">
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:200px" src="resources/images/page1.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">Y. He, X. Ren, D. Tang, Y. Zhang, X. Xue, Y. Fu</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">Density-preserving Deep Point Cloud Compression</span></b>
+                    <br><br>
+                    <span style="font-size:14pt">CVPR 2022</span>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="https://arxiv.org/abs/2103.08271">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="./resources/bibtex.txt">[Bibtex]</a> &nbsp; &nbsp; 
+                        <a href="https://github.com/BoyanJIANG/4D-Compositional-Representation">[GitHub]</a> &nbsp; &nbsp;
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <hr>
+    <div class="center-div">
+        <h1>Quantitative Results</h1>
+    </div>
+    <br>
+    <table align="center" width="900px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/quantitative_results.png" width="900px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>Quantitative comparisons with SOTA.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Qualitative Results</h1>
+    </div>
+    <br>
+    <table align="center" width="900px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/qualitative_results.png" width="900px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>Qualitative comparisons with SOTA.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <table align="center" width="1000px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                            This work was supported in part by
+                            NSFC under Grant (No. 62076067), SMSTM Project
+                            (2021SHZDZX0103), and Shanghai Research and Innovation Functional Program (17DZ2260900). Danhang Tang,
+                            Yinda Zhang and Yanwei Fu are the corresponding authours.                            
+                            The website is modified from this <a href="https://github.com/richzhang/webpage-template">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>
