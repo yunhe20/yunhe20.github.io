@@ -1,0 +1,220 @@
+
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>Grad-PU</title>
+    <meta property="og:title" content="Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with
+    Learned Distance Functions">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with
+            Learned Distance Functions</span>
+    </div>
+
+    <br>
+    <table align="center" width="850px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yun He<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Danhang Tang<sup>2</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yinda Zhang<sup>2</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xiangyang Xue<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yanwei Fu<sup>1</sup></a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><sup>1</sup>Fudan University &nbsp; &nbsp; <sup>2</sup>Google</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <table align="center" width="650px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/teaser.png" width="650px" style="margin-bottom: 10px;"></a><br>
+                    </div>
+                    <div class="center-div">
+                            <span style="font-size:14px"><i>Our method first interpolates the low-res point cloud according
+                                to a given upsampling rate. And then refine the positions of the interpolated points with an 
+                                iterative optimization process, guided by a trained model estimating the difference between 
+                                the current point cloud and the high-res target.</i></span>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p style="text-align:justify">
+        Most existing point cloud upsampling methods have roughly three steps: feature extraction, feature expansion 
+        and 3D coordinate prediction. 
+        However, they usually suffer from two critical issues: (1) fixed upsampling rate after one-time training, 
+        since the feature expansion unit is customized for each upsampling rate; (2) outliers or shrinkage artifact caused by 
+        the difficulty of precisely predicting 3D coordinates or residuals of upsampled points. 
+        To adress them, we propose a new framework for accurate point cloud upsampling that supports arbitrary upsampling rates. 
+        Our method first interpolates the low-res point cloud according to a given upsampling rate. 
+        And then refine the positions of the interpolated points with an iterative optimization process, guided by a trained model 
+        estimating the difference between the current point cloud and the high-res target. 
+        Extensive quantitative and qualitative results on benchmarks and downstream tasks demonstrate that our method 
+        achieves the state-of-the-art accuracy and efficiency.
+
+    </p>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Network Architecture</h1>
+    </div>
+    <br>
+    <table align="center" width="950px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/p2pnet.png" width="950px" style="margin-bottom: 10px;"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>Our P2PNet contains two submodules: a feature extractor and point-to-point distance regressor. For feature extractor, we stack
+                            an initial MLP and three dense blocks with intra-block dense connection, where each dense block has three convolution groups to
+                            capture local features and one transition down layer to reduce channel. In distance regressor, we estimate the point-to-point distance for
+                            each query point conditioned on the extracted local and global features.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper and Code</h1>
+    </div>
+    <table align="center" width="800px">
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:200px" src="resources/images/first_page.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">Y. He, D. Tang, Y. Zhang, X. Xue, Y. Fu</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with
+                        Learned Distance Functions</span></b>
+                    <br><br>
+                    <span style="font-size:14pt">CVPR 2023</span>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="http://arxiv.org/abs/2204.12684">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="https://github.com/yunhe20/Grad-PU">[GitHub]</a> &nbsp; &nbsp;
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <hr>
+    <div class="center-div">
+        <h1>Qualitative Results</h1>
+    </div>
+    <br>
+    <table align="center" width="1000px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/pugan.png" width="1000px" style="margin-bottom: 30px;"></a><br>
+                        <a href="#"><img src="resources/images/scanobjectnn.png" width="1000px" style="margin-bottom: 30px;"></a><br>
+                        <a href="#"><img src="resources/images/kitti.png" width="1000px" style="margin-bottom: 10px;"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i>Qualitative comparisons with SOTA.</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <table align="center" width="1000px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                            This work was supported in part by NSFC Project (62176061) and STCSM Project (No.22511105000). 
+                            Danhang Tang, Yinda Zhang and Xiangyang Xue are the corresponding authours.                           
+                            The website is modified from this <a href="https://github.com/richzhang/webpage-template">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>
