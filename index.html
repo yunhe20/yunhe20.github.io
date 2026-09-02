@@ -363,6 +363,14 @@
 
 
   
+  <style>
+    #publications .isotope-item:nth-of-type(1) { order: 1; }
+    #publications .isotope-item:nth-of-type(2) { order: 2; }
+    #publications .isotope-item:nth-of-type(3) { order: 6; }
+    #publications .isotope-item:nth-of-type(4) { order: 3; }
+    #publications .isotope-item:nth-of-type(5) { order: 4; }
+    #publications .isotope-item:nth-of-type(6) { order: 5; }
+  </style>
   <title>Yun He</title>
 
   
@@ -702,10 +710,6 @@
             
           
 
-          <li class="nav-item">
-            <a class="nav-link " href="/#teaching" data-target="#teaching"><span>Teaching</span></a>
-          </li>
-
           
           
 
@@ -881,7 +885,8 @@
       
       <img class="avatar avatar-circle"
            width="250" height="250"
-           src="/authors/admin/photo.jpg" alt="Yun He">
+           src="/authors/admin/me.JPG" alt="Yun He"
+           style="border: 3px solid #8fa8bf;">
       
 
       <div class="portrait-title">
@@ -946,7 +951,13 @@
     
     <div class="article-style">
       <!-- Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks. -->
-<p style="text-align: justify;">Hi, I am Yun He, a second-year CS PhD student at the <a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a>, advised by <a href="https://scholar.google.com/citations?user=KW0FmzgAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Matthias Zwicker</a>. I recieved my master's degree in computer science from <a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a> in 2023, co-advised by <a href="http://yanweifu.github.io/" target="_blank" rel="noopener">Prof. Yanwei Fu</a> and <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Xiangyang Xue</a>. During my master's studies, I also collaborated closely with <a href="https://scholar.google.com/citations?user=9uxs6G4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Danhang Tang</a> and <a href="https://www.zhangyinda.com/" target="_blank" rel="noopener">Dr. Yinda Zhang</a> at Google. In 2020, I obtained my bachelor's degree in computer science from <a href="http://english.cqu.edu.cn/" target="_blank" rel="noopener">Chongqing University</a>. My primary research interests include: (1) Multimodal Agents, with a focus on driving scene editing and indoor scene synthesis; (2) 3D Vision, specifically Gaussian Splatting-based 3D reconstruction.</p>
+<p style="text-align: justify;">Hi, I am Yun He, a third-year CS PhD student at the <a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a>, advised by <a href="https://scholar.google.com/citations?user=KW0FmzgAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Matthias Zwicker</a>. I received my master's degree in computer science from <a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a> in 2023, co-advised by <a href="http://yanweifu.github.io/" target="_blank" rel="noopener">Prof. Yanwei Fu</a> and <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Xiangyang Xue</a>. During my master's studies, I also collaborated closely with <a href="https://scholar.google.com/citations?user=9uxs6G4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Danhang Tang</a> and <a href="https://www.zhangyinda.com/" target="_blank" rel="noopener">Dr. Yinda Zhang</a> at Google. In 2020, I obtained my bachelor's degree in computer science from <a href="http://english.cqu.edu.cn/" target="_blank" rel="noopener">Chongqing University</a>.</p>
+<p>My primary research interests include:</p>
+<ul style="text-align: justify;">
+  <li><strong>Video Generation and Editing</strong>, particularly for autonomous vehicles and robotics, such as <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a> (ECCV 2026).</li>
+  <li><strong>Multimodal Agents</strong>, with an emphasis on building efficient and automated agentic frameworks, ranging from a training-free framework (<a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a>, ECCV 2026) to trainable orchestration (<a href="https://yunhe24.github.io/sceneorchestra/" target="_blank" rel="noopener">SceneOrchestra</a>, ECCV 2026).</li>
+  <li><strong>3D Vision</strong>, including Gaussian Splatting for object relighting (<a href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">TranSplat</a>, ICCP 2026), as well as point cloud processing for upsampling (<a href="https://yunhe20.github.io/Grad-PU/" target="_blank" rel="noopener">Grad-PU</a>, CVPR 2023) and compression (<a href="https://yunhe20.github.io/D-PCC/" target="_blank" rel="noopener">D-PCC</a>, CVPR 2022).</li>
+</ul>
 
     </div>
     
@@ -960,17 +971,17 @@
 
           <li>
             <i class="fa-li fa-solid fa-book"></i>
+            Video Generation and Editing
+          </li>
+
+          <li>
+            <i class="fa-li fa-solid fa-book"></i>
             Multimodal Agents
           </li>
 
           <li>
             <i class="fa-li fa-solid fa-book"></i>
-            3D Reconstruction
-          </li>
-
-          <li>
-            <i class="fa-li fa-solid fa-book"></i>
-            3D Geometry Processing
+            3D Vision
           </li>
 
         </ul>
@@ -1109,8 +1120,12 @@
 
   <div class="col-12">
     <ul>
-<li>[2025-12] We release <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a>, an agentic workflow for driving scene editing.</li>
-<li>[2025-05] I join <a href="https://www.nec-labs.com/research/media-analytics/" target="_blank" rel="noopener">NEC Labs America</a> as a research intern.</li>
+<li>[2026-06] <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a> and <a href="https://yunhe24.github.io/sceneorchestra/" target="_blank" rel="noopener">SceneOrchestra</a> are accepted to ECCV 2026.</li>
+<li>[2026-06] I join <a href="https://www.amazon.science/" target="_blank" rel="noopener">Amazon</a> as an Applied Scientist Intern.</li>
+<li>[2026-05] <a href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">TranSplat</a> is accepted to ICCP 2026.</li>
+<li>[2026-04] <a href="https://arxiv.org/abs/2602.03845" target="_blank" rel="noopener">Parallel-Probe</a> is accepted to ICML 2026.</li>
+<li>[2025-12] We release <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a>, an agentic workflow for driving video editing.</li>
+<li>[2025-05] I join <a href="https://www.nec-labs.com/research/media-analytics/" target="_blank" rel="noopener">NEC Labs America</a> as a Research Intern.</li>
 <li>[2024-08] I join <a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">UMD</a> as a CS PhD student.</li>
 <li>[2023-06] I am awarded as an Outstanding Master's Student in Shanghai (Top 3%)!</li>
 <li>[2023-02] <a href="https://arxiv.org/abs/2304.11846" target="_blank" rel="noopener">Grad-PU</a> is accepted by CVPR 2023. Code is avaliable at <a href="https://github.com/yunhe20/Grad-PU" target="_blank" rel="noopener">Github</a>.</li>
@@ -1225,6 +1240,26 @@
 
   <div class=" row js-layout-row project-showcase">
 
+    <div class="col-12 isotope-item">
+      <div class="col-lg-12 mb-5 view-showcase">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="section-subheading article-title mb-0 mt-0"><a href="https://yunhe24.github.io/sceneorchestra/" target="_blank" rel="noopener">SceneOrchestra: Efficient Agentic 3D Scene Synthesis via Full Tool-Call Trajectory Generation (ECCV 2026)</a></div>
+            <div class="article-style"><strong>Yun He</strong>, Kelin Yu, Matthias Zwicker</div>
+            <div class="btn-links">
+              <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2604.19907" target="_blank" rel="noopener">Paper</a>
+              <a class="btn btn-outline-primary btn-page-header" href="https://yunhe24.github.io/sceneorchestra/" target="_blank" rel="noopener">Project Page</a>
+              <a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=nPEjesP1ikw" target="_blank" rel="noopener">Video</a>
+              <a class="btn btn-outline-primary btn-page-header" href="/media/posters/SceneOrchestra_Poster.pdf" target="_blank" rel="noopener">Poster</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 order-first">
+            <a href="https://yunhe24.github.io/sceneorchestra/" target="_blank" rel="noopener"><img src="/project/sceneorchestra/overview.png" width="540" alt="SceneOrchestra overview" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
     
 
@@ -1270,7 +1305,7 @@
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/langdrivectrl/" >LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission)</a></div>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026)</a></div>
 
 
       <div class="article-style">
@@ -1300,6 +1335,12 @@
   <a class="btn btn-outline-primary btn-page-header" href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">
     Project Page</a>
 
+  <a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=P7aLvRf3Dzg" target="_blank" rel="noopener">
+    Video</a>
+
+  <a class="btn btn-outline-primary btn-page-header" href="/media/posters/LangDriveCTRL_Poster.png" target="_blank" rel="noopener">
+    Poster</a>
+
 
       </div>
 
@@ -1309,9 +1350,9 @@
 
 
 
-        <a href="/project/langdrivectrl/" >
-          <img src="/project/langdrivectrl/featured.png" height="297" width="540"
-              alt="LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission)" loading="lazy">
+        <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">
+          <img src="/project/langdrivectrl/overview.jpg" width="540"
+              alt="LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026)" loading="lazy">
         </a>
 
     </div>
@@ -1343,11 +1384,11 @@
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/transplat/" >TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission)</a></div>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026)</a></div>
 
 
       <div class="article-style">
-        Boyang Yu, Yanlin Jin, <strong>Yun He</strong>, Akshat Dave, Guha Balakrishnan
+        Boyang Yu, Yanlin Jin, <strong>Yun He</strong>, Akshat Dave, Ravi Ramamoorthi, Guha Balakrishnan
       </div>
 
 
@@ -1370,6 +1411,12 @@
   <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2503.22676" target="_blank" rel="noopener">
     Paper</a>
 
+  <a class="btn btn-outline-primary btn-page-header" href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">
+    Project Page</a>
+
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/tonyyu0822/TranSplat" target="_blank" rel="noopener">
+    Code</a>
+
 
       </div>
 
@@ -1379,9 +1426,9 @@
 
 
 
-        <a href="/project/transplat/" >
+        <a href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">
           <img src="/project/transplat/featured.png" height="297" width="540"
-              alt="TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission)" loading="lazy">
+              alt="TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026)" loading="lazy">
         </a>
 
     </div>
@@ -1419,7 +1466,7 @@
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/grad-pu/" >Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with Learned Distance Functions (CVPR 2023)</a></div>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="https://yunhe20.github.io/Grad-PU/" target="_blank" rel="noopener">Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with Learned Distance Functions (CVPR 2023)</a></div>
 
       
       <div class="article-style">
@@ -1521,7 +1568,7 @@
 
       
         
-        <a href="/project/grad-pu/" >
+        <a href="https://yunhe20.github.io/Grad-PU/" target="_blank" rel="noopener">
           <img src="/project/grad-pu/featured.png" height="297" width="540"
               alt="Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with Learned Distance Functions (CVPR 2023)" loading="lazy">
         </a>
@@ -1561,7 +1608,7 @@
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/d-pcc/" >Density-preserving Deep Point Cloud Compression (CVPR 2022)</a></div>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="https://yunhe20.github.io/D-PCC/" target="_blank" rel="noopener">Density-preserving Deep Point Cloud Compression (CVPR 2022)</a></div>
 
       
       <div class="article-style">
@@ -1649,7 +1696,7 @@
 
       
         
-        <a href="/project/d-pcc/" >
+        <a href="https://yunhe20.github.io/D-PCC/" target="_blank" rel="noopener">
           <img src="/project/d-pcc/featured.png" height="194" width="540"
               alt="Density-preserving Deep Point Cloud Compression (CVPR 2022)" loading="lazy">
         </a>
@@ -1659,6 +1706,24 @@
 </div>
 
       </div>
+
+    <div class="col-12 isotope-item">
+      <div class="col-lg-12 mb-5 view-showcase">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="section-subheading article-title mb-0 mt-0"><a href="https://arxiv.org/abs/2602.03845" target="_blank" rel="noopener">Parallel-Probe: Towards Efficient Parallel Thinking via 2D Probing (ICML 2026)</a></div>
+            <div class="article-style">Tong Zheng, Chengsong Huang, Runpeng Dai, <strong>Yun He</strong>, Rui Liu, Xin Ni, Huiwen Bao, Kaishen Wang, Hongtu Zhu, Jiaxin Huang, Furong Huang, Heng Huang</div>
+            <div class="btn-links">
+              <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2602.03845" target="_blank" rel="noopener">Paper</a>
+              <a class="btn btn-outline-primary btn-page-header" href="https://github.com/zhengkid/Parallel-Probe" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 order-first">
+            <a href="https://arxiv.org/abs/2602.03845" target="_blank" rel="noopener"><img src="/project/parallel-probe/overview.png" width="540" alt="Parallel-Probe overview" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
   </div>
@@ -1738,7 +1803,7 @@
       </div>
 
       <div class="col-12 col-lg-8">
-        <!-- NEC Labs America Experience -->
+        <!-- Amazon Experience -->
         <div class="row experience">
           <div class="col-auto text-center flex-column d-none d-sm-flex">
             <div class="row h-50">
@@ -1747,6 +1812,56 @@
             </div>
             <div class="m-2">
               <span class="badge badge-pill border exp-fill">&nbsp;</span>
+            </div>
+            <div class="row h-50">
+              <div class="col border-right">&nbsp;</div>
+              <div class="col">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col py-2">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="mr-2">
+                    <a href="https://www.amazon.science/" target="_blank" rel="noopener" aria-label="Amazon Science">
+                      <img src="/media/icons/brands/amazon-logo.jpg" width="100" alt="Amazon" loading="lazy">
+                    </a>
+                  </div>
+                  <div>
+                    <div class="section-subheading card-title exp-title text-muted my-0">Applied Scientist Intern</div>
+                    <div class="section-subheading card-title exp-company text-muted my-0">
+                      <a href="https://www.amazon.science/" target="_blank" rel="noopener">Amazon</a>
+                    </div>
+                    <div class="text-muted exp-meta">
+                      Jun 2026 – Aug 2026
+                      <span class="middot-divider"></span>
+                      <span>Bellevue, WA</span>
+                    </div>
+                    <div class="text-muted exp-meta">
+                      Manager: <a href="https://avinash-ravichandran.github.io/" target="_blank" rel="noopener">Dr. Avinash Ravichandran</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <ul>
+                    <li>Develop an arrow-guided method for controllable driving video generation: users select a target vehicle and specify its motion with an arrow in the first frame, then the generated video shows the vehicle following that motion.</li>
+                    <li>Achieve strong motion controllability and high visual quality in the generated videos.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEC Labs America Experience -->
+        <div class="row experience">
+          <div class="col-auto text-center flex-column d-none d-sm-flex">
+            <div class="row h-50">
+              <div class="col border-right">&nbsp;</div>
+              <div class="col">&nbsp;</div>
+            </div>
+            <div class="m-2">
+              <span class="badge badge-pill border">&nbsp;</span>
             </div>
             <div class="row h-50">
               <div class="col border-right">&nbsp;</div>
@@ -1772,11 +1887,14 @@
                       <span class="middot-divider"></span>
                       <span>San Jose, CA</span>
                     </div>
+                    <div class="text-muted exp-meta">
+                      Manager: <a href="https://cseweb.ucsd.edu/~mkchandraker/" target="_blank" rel="noopener">Dr. Manmohan Chandraker</a>
+                    </div>
                   </div>
                 </div>
                 <div class="card-text">
                   <ul>
-                    <li>Introduce an agentic framework for driving scene editing, which supports both object level editing (removal, insertion, and replacement) and multi-object behavior editing.</li>
+                    <li>Develop <a href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">LangDriveCTRL</a> (ECCV 2026), an agentic framework for driving video editing that supports both object-level editing (removal, insertion, and replacement) and multi-object behavior editing.</li>
                     <li>Achieve both high controllability and strong realism by combining explicit modular agents with diffusion-based refinement.</li>
                   </ul>
                 </div>
@@ -1796,7 +1914,7 @@
               <span class="badge badge-pill border">&nbsp;</span>
             </div>
             <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
+              <div class="col">&nbsp;</div>
               <div class="col">&nbsp;</div>
             </div>
           </div>
@@ -1819,98 +1937,17 @@
                       <span class="middot-divider"></span>
                       <span>Shanghai, China</span>
                     </div>
+                    <div class="text-muted exp-meta">
+                      Managers: <a href="https://scholar.google.com/citations?user=9uxs6G4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Danhang Tang</a> and <a href="https://www.zhangyinda.com/" target="_blank" rel="noopener">Dr. Yinda Zhang</a>
+                    </div>
                   </div>
                 </div>
                 <div class="card-text">
                   <ul>
-                    <li>Propose a new framework for accurate point cloud upsampling that supports arbitrary upsampling rates.</li>
-                    <li>Introduce a novel deep point cloud compression method that preserves local density.</li>
+                    <li>Develop <a href="https://yunhe20.github.io/Grad-PU/" target="_blank" rel="noopener">Grad-PU</a> (CVPR 2023), a framework for accurate point cloud upsampling that supports arbitrary upsampling rates.</li>
+                    <li>Develop <a href="https://yunhe20.github.io/D-PCC/" target="_blank" rel="noopener">D-PCC</a> (CVPR 2022), a deep point cloud compression method that preserves local density.</li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Meituan Experience -->
-        <div class="row experience">
-          <div class="col-auto text-center flex-column d-none d-sm-flex">
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-            <div class="m-2">
-              <span class="badge badge-pill border exp-fill">&nbsp;</span>
-            </div>
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-          </div>
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="mr-2">
-                    <a href="https://www.meituan.com/en-US/about-us" target="_blank" rel="noopener">
-                      <img src="/media/icons/brands/meituan.svg" width="56px" height="56px" alt="Meituan" loading="lazy">
-                    </a>
-                  </div>
-                  <div>
-                    <div class="section-subheading card-title exp-title text-muted my-0">Machine Learning Engineer (Full-Time)</div>
-                    <div class="section-subheading card-title exp-company text-muted my-0">
-                      <a href="https://www.meituan.com/en-US/about-us" target="_blank" rel="noopener">Meituan</a>
-                    </div>
-                    <div class="text-muted exp-meta">
-                      Jul 2023 – Apr 2024
-                      <span class="middot-divider"></span>
-                      <span>Shanghai, China</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-text">Apply advanced machine learning techniques to improve the advertisement recommendation system of Meituan app.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ByteDance Experience -->
-        <div class="row experience">
-          <div class="col-auto text-center flex-column d-none d-sm-flex">
-            <div class="row h-50">
-              <div class="col border-right">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-            <div class="m-2">
-              <span class="badge badge-pill border">&nbsp;</span>
-            </div>
-            <div class="row h-50">
-              <div class="col">&nbsp;</div>
-              <div class="col">&nbsp;</div>
-            </div>
-          </div>
-          <div class="col py-2">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="mr-2">
-                    <a href="https://www.bytedance.com/en/" target="_blank" rel="noopener">
-                      <img src="/media/icons/brands/douyin.svg" width="56px" height="56px" alt="ByteDance" loading="lazy">
-                    </a>
-                  </div>
-                  <div>
-                    <div class="section-subheading card-title exp-title text-muted my-0">Machine Learning Engineer (Intern)</div>
-                    <div class="section-subheading card-title exp-company text-muted my-0">
-                      <a href="https://www.bytedance.com/en/" target="_blank" rel="noopener">ByteDance</a>
-                    </div>
-                    <div class="text-muted exp-meta">
-                      May 2022 – Aug 2022
-                      <span class="middot-divider"></span>
-                      <span>Shanghai, China</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-text">Apply machine learning methods to improve the short-form video recommendation system of Douyin (Chinese TikTok) app.</div>
               </div>
             </div>
           </div>
@@ -2133,94 +2170,7 @@
 
 
 
-<section id="teaching" class="home-section wg-accomplishments  "  >
- <div class="home-section-bg " >
-   
- </div>
-  <div class="container">
 
-  
-    <div class="row  ">
-    
-      
-        <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Teaching Assistant</h1>
-          
-        </div>
-      
-    
-  
-
-    
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-
-
-
-
-    <div class="card experience course">
-      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">Advanced Computer Graphics (CMSC740)</div><div class="card-subtitle my-0 article-metadata"><a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a><span class="middot-divider"></span>
-
-              Sep 2025
-
-              – Dec 2025
-
-            </div>
-
-
-
-
-      </div>
-    </div>
-
-    <div class="card experience course">
-      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">Python Programming (COMP110042.13)</div><div class="card-subtitle my-0 article-metadata"><a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a><span class="middot-divider"></span>
-
-              Sep 2021
-              
-              – Jan 2022
-              
-            </div>
-
-        
-
-        
-      </div>
-    </div>
-  
-    <div class="card experience course">
-      <div class="card-body"><div class="section-subheading card-title exp-title text-muted my-0">Data Structure (COMP130184.01)</div><div class="card-subtitle my-0 article-metadata"><a href="https://www.fudan.edu.cn/en/" target="_blank" rel="noopener">Fudan University</a><span class="middot-divider"></span>
-
-              Sep 2020
-              
-              – Jan 2021
-              
-            </div>
-
-        
-
-        
-      </div>
-    </div>
-  
-  
-</div>
-
-
-  
-    </div>
-  
-
-  </div>
-</section>
 
 
 

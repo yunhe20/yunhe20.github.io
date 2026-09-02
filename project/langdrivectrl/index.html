@@ -99,7 +99,7 @@
 <meta property="twitter:image" content="https://yunhe20.github.io/project/langdrivectrl/featured.png" />
 <meta property="og:site_name" content="Yun He" />
 <meta property="og:url" content="https://yunhe20.github.io/project/langdrivectrl/" />
-<meta property="og:title" content="LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission) | Yun He" />
+<meta property="og:title" content="LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026) | Yun He" />
 <meta property="og:description" content="**Yun He**, Francesco Pittaluga, Ziyu Jiang, Matthias Zwicker, Manmohan Chandraker, Zaid Tasneem" /><meta property="og:image" content="https://yunhe20.github.io/project/langdrivectrl/featured.png" /><meta property="og:locale" content="en-us" />
 
 
@@ -120,7 +120,7 @@
     "@type": "WebPage",
     "@id": "https://yunhe20.github.io/project/langdrivectrl/"
   },
-  "headline": "LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission)",
+  "headline": "LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026)",
 
   "image": [
     "https://yunhe20.github.io/project/langdrivectrl/featured.png"
@@ -155,7 +155,7 @@
 
 
 
-  <title>LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission) | Yun He</title>
+  <title>LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026) | Yun He</title>
 
 
 
@@ -550,7 +550,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (In Submission)</h1>
+  <h1>LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multi-modal Agents (ECCV 2026)</h1>
 
 
 
@@ -607,6 +607,10 @@
 <div class="btn-links mb-3">
 
 
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2512.17445" target="_blank" rel="noopener">
+    Paper</a>
+
+
 
 
 
@@ -619,6 +623,12 @@
   <a class="btn btn-outline-primary btn-page-header" href="https://yunhe24.github.io/langdrivectrl/" target="_blank" rel="noopener">
     Project Page</a>
 
+  <a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=P7aLvRf3Dzg" target="_blank" rel="noopener">
+    Video</a>
+
+  <a class="btn btn-outline-primary btn-page-header" href="/media/posters/LangDriveCTRL_Poster.png" target="_blank" rel="noopener">
+    Poster</a>
+
 
 </div>
 
@@ -626,9 +636,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 396px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px;">
   <div style="position: relative">
-    <img src="/project/langdrivectrl/featured.png" width="720" height="396" alt="" class="featured-image">
+    <img src="/project/langdrivectrl/overview.jpg" width="720" alt="LangDriveCTRL overview" class="featured-image">
     <span class="article-header-caption">Overview</span>
   </div>
 </div>
@@ -639,9 +649,9 @@
 
     <div class="article-style">
       <h3 id="abstract"><strong>Abstract</strong></h3>
-<p style="text-align: justify;">LangDriveCTRL is a natural-language-controllable framework for editing real-world driving videos to synthesize diverse traffic scenarios. It leverages explicit 3D scene decomposition to represent driving videos as a scene graph, containing static background and dynamic objects. To enable fine-grained editing and realism, it incorporates an agentic pipeline in which an <em>Orchestrator</em> transforms user instructions into execution graphs that coordinate specialized agents and tools. Specifically, an <em>Object Grounding Agent</em> establishes correspondence between free-form text descriptions and target object nodes in the scene graph; a <em>Behavior Editing Agent</em> generates multi-object trajectories from language instructions; and a <em>Behavior Reviewer Agent</em> iteratively reviews and refines the generated trajectories. The edited scene graph is rendered and then refined using a video diffusion tool to address artifacts introduced by object insertion and significant view changes. LangDriveCTRL supports both object node editing (removal, insertion and replacement) and multi-object behavior editing from a single natural-language instruction. Quantitatively, it achieves nearly 2× higher instruction alignment than the previous SoTA, with superior structural preservation, photorealism, and traffic realism.</p>
+<p style="text-align: justify;">LangDriveCTRL is a natural-language-controllable framework for editing real-world driving videos to synthesize diverse traffic scenarios. It represents each video as an explicit 3D scene graph, decomposing the scene into a static background and dynamic object nodes. To enable fine-grained editing and realism, it introduces a feedback-driven agentic pipeline. An <em>Orchestrator</em> converts user instructions into executable graphs that coordinate specialized multi-modal agents and tools. An <em>Object Grounding Agent</em> aligns free-form text with target object nodes in the scene graph; a <em>Behavior Editing Agent</em> generates multi-object trajectories from language instructions; and a <em>Behavior Reviewer Agent</em> iteratively reviews and refines the generated trajectories. The edited scene graph is rendered and harmonized using a video diffusion tool, and then further refined by a <em>Video Reviewer Agent</em> to ensure photorealism and appearance alignment. LangDriveCTRL supports both object node editing (removal, insertion, and replacement) and multi-object behavior editing from natural-language instructions. Quantitatively, it achieves nearly 2× higher instruction alignment than the previous SoTA, with superior photorealism, structural preservation, and traffic realism.</p>
 <h3 id="publication"><strong>Publication</strong></h3>
-<p>In Submission, 2025.</p>
+<p>ECCV 2026.</p>
 
     </div>
 

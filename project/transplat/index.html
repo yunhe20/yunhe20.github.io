@@ -78,7 +78,7 @@
 
 
 
-<meta name="description" content="Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Guha Balakrishnan" />
+<meta name="description" content="Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Ravi Ramamoorthi, Guha Balakrishnan" />
 
 <link rel="alternate" hreflang="en-us" href="https://yunhe20.github.io/project/transplat/" />
 <link rel="canonical" href="https://yunhe20.github.io/project/transplat/" />
@@ -99,8 +99,8 @@
 <meta property="twitter:image" content="https://yunhe20.github.io/project/transplat/featured.png" />
 <meta property="og:site_name" content="Yun He" />
 <meta property="og:url" content="https://yunhe20.github.io/project/transplat/" />
-<meta property="og:title" content="TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission) | Yun He" />
-<meta property="og:description" content="Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Guha Balakrishnan" /><meta property="og:image" content="https://yunhe20.github.io/project/transplat/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026) | Yun He" />
+<meta property="og:description" content="Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Ravi Ramamoorthi, Guha Balakrishnan" /><meta property="og:image" content="https://yunhe20.github.io/project/transplat/featured.png" /><meta property="og:locale" content="en-us" />
 
 
     <meta
@@ -120,7 +120,7 @@
     "@type": "WebPage",
     "@id": "https://yunhe20.github.io/project/transplat/"
   },
-  "headline": "TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission)",
+  "headline": "TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026)",
 
   "image": [
     "https://yunhe20.github.io/project/transplat/featured.png"
@@ -142,7 +142,7 @@
       "url": "https://yunhe20.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Guha Balakrishnan"
+  "description": "Boyang Yu, Yanlin Jin, **Yun He**, Akshat Dave, Ravi Ramamoorthi, Guha Balakrishnan"
 }
 </script>
 
@@ -155,7 +155,7 @@
 
 
 
-  <title>TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission) | Yun He</title>
+  <title>TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026) | Yun He</title>
 
 
 
@@ -550,7 +550,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>TranSplat: Instant Cross-Scene Object Relighting in Gaussian Splatting via Spherical Harmonic Transfer (In Submission)</h1>
+  <h1>TranSplat: Instant Object Relighting in Gaussian Splatting via Spherical Harmonic Radiance Transfer (ICCP 2026)</h1>
 
 
 
@@ -571,6 +571,7 @@
       Yanlin Jin</span>, <span class="author-highlighted">
       Yun He</span>, <span >
       Akshat Dave</span>, <span >
+      Ravi Ramamoorthi</span>, <span >
       Guha Balakrishnan</span>
   </div>
 
@@ -618,6 +619,12 @@
   <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2503.22676" target="_blank" rel="noopener">
     Paper</a>
 
+  <a class="btn btn-outline-primary btn-page-header" href="https://tonyyu0822.github.io/transplat/" target="_blank" rel="noopener">
+    Project Page</a>
+
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/tonyyu0822/TranSplat" target="_blank" rel="noopener">
+    Code</a>
+
 
 </div>
 
@@ -638,9 +645,9 @@
 
     <div class="article-style">
       <h3 id="abstract"><strong>Abstract</strong></h3>
-<p style="text-align: justify;">We present TranSplat, a technique for rapidly relighting 3D objects when moving them between different Gaussian Splatting scenes. Our method leverages a theoretical framework based on radiance transfer that uses spherical harmonic coefficients rather than requiring explicit BRDF computations. Key contributions include being the first to implement this theoretical approach within the Gaussian Splatting framework and automatically determining environment maps from scene representations. Testing across synthetic and real-world scenarios shows our approach achieves comparable results to inverse rendering methods while operating substantially faster. Although the technique was theoretically designed for radially symmetric BRDFs, it produces perceptually convincing outputs on real scenes.</p>
+<p style="text-align: justify;">We present TranSplat, a method for instant, accurate object relighting within the Gaussian Splatting (GS) framework. Rather than relying on costly inverse rendering routines, we propose a BRDF-free radiance transfer strategy that analytically modulates the spherical harmonic (SH) appearance coefficients of an object's 2D Gaussian surfels using per-normal irradiance ratios derived from source and target environment maps. To handle view-dependent and glossy appearances without explicit material estimation, we introduce a specularity-aware dual-path SH transfer strategy that adapts higher-order SH bands in the reflection domain. Additionally, we propose a lightweight SH-domain self-shadowing module to ensure physically realistic occlusion without explicit mesh raycasting. Operating as a post-processing step, TranSplat requires no additional GS retraining for a pair of source and target scenes. Evaluations on synthetic and real-world objects demonstrate state-of-the-art accuracy, outperforming recent inverse-rendering and diffusion-based GS relighting methods across most conditions, all while completing relighting operations in under one second. Although bounded by radially symmetric BRDF approximations and the low-pass nature of the SH basis, TranSplat produces perceptually realistic renderings even for glossy, complex materials, establishing a valuable, lightweight path forward for GS relighting.</p>
 <h3 id="publication"><strong>Publication</strong></h3>
-<p>In Submission, 2025.</p>
+<p>ICCP 2026.</p>
 
     </div>
 
